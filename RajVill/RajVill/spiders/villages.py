@@ -29,6 +29,6 @@ class VillagesSpider(scrapy.Spider):
             name = village.xpath(".//text()").get()
             yield{
                 "District": dn,
-                "Tehsil": tn,
+                "SubDistrict": tn,
                 "Village": name
             }
